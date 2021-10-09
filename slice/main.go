@@ -4,6 +4,12 @@ import "fmt"
 
 func main() {
 	var foods = []string{"红烧肉", "清蒸鱼", "刘大侠", "蒸螃蟹", "鲍鱼粥"}
+
+	for i, item := range foods {
+		res := fmt.Sprintf("%d--%q", i, item)
+		fmt.Println(res)
+	}
+
 	fmt.Println(foods)
 	foods = append(foods, "三文鱼")
 	fmt.Println(foods)
@@ -39,4 +45,22 @@ func main() {
 	fmt.Println(deleteFoods)
 	deleteFoods2 := append(deleteFoods[:2], deleteFoods[3:]...)
 	fmt.Println(deleteFoods2)
+
+	testFoods := []string{"红烧肉", "清蒸鱼", "熘大虾", "蒸螃蟹", "鲍鱼粥"}
+	testFoods2 := make([]*string, len(testFoods))
+	for i, value := range testFoods {
+		testFoods2[i] = &value
+	}
+	fmt.Println(testFoods[0], testFoods[1], testFoods[2], testFoods[3], testFoods[4])
+	fmt.Println(*testFoods2[0], *testFoods2[1], *testFoods2[2], *testFoods2[3], *testFoods2[4])
+	fmt.Println(testFoods2[0], testFoods2[1], testFoods2[2], testFoods2[3], testFoods2[4])
+	fmt.Println("-----------------------------------------------------------")
+	testFoods3 := make([]*string, len(testFoods))
+	for i := range testFoods {
+		testFoods3[i] = &testFoods[i]
+	}
+	fmt.Println(testFoods[0], testFoods[1], testFoods[2], testFoods[3], testFoods[4])
+	fmt.Println(*testFoods3[0], *testFoods3[1], *testFoods3[2], *testFoods3[3], *testFoods3[4])
+	fmt.Println(testFoods3[0], testFoods3[1], testFoods3[2], testFoods3[3], testFoods3[4])
+
 }
