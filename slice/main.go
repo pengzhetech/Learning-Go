@@ -30,8 +30,13 @@ func main() {
 
 	/**
 	从切片中删除元素
+	1:找到待删除元素前面的切片
+	2:找到待删除元素后面的切片
+	3:把这两个切片组合起来,即可到达删除元素的目的
 	*/
 
-	var deleteFoods = []string{"123", "234234", "23424", "234234236"}
+	var deleteFoods = []string{"1", "2", "3", "4"}
 	fmt.Println(deleteFoods)
+	deleteFoods2 := append(deleteFoods[:2], deleteFoods[3:]...)
+	fmt.Println(deleteFoods2)
 }
