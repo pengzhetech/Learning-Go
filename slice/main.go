@@ -27,4 +27,11 @@ func main() {
 	//在末尾添加另外一个切片
 	foods = append(foods[:], append(foods2)...)
 	fmt.Println(foods)
+
+	/**
+	从切片中删除元素
+	*/
+
+	var deleteFoods = []string{"123", "234234", "23424", "234234236"}
+	fmt.Println(deleteFoods)
 }
