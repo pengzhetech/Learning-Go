@@ -12,11 +12,14 @@ func Hello4Hunan(num string) string {
 }
 
 func main() {
-	var hello Hi
+	x := 2324 % 199
+	fmt.Println(x)
+
+	/*var hello Hi
 	hello = Hello
 	w := hello("3")
 	fmt.Printf("%s\n", w)
 	hello = Hello4Hunan
 	h := hello("8")
-	fmt.Printf("%s\n", h)
+	fmt.Printf("%s\n", h)*/
 }
