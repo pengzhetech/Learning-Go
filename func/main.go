@@ -27,4 +27,12 @@ func main() {
 	s := hello2("4")
 	fmt.Println(s)
 
+	testFunc, i := TestFunc("1", "2")
+
+	fmt.Println(testFunc, i)
+}
+
+func TestFunc(name, types string) (string, int) {
+	fmt.Println("接受到的参数", name, types)
+	return "1", 100000
 }
