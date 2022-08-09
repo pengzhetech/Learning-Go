@@ -16,4 +16,5 @@ require (
 	golang.org/x/text v0.3.7 // indirect
 	google.golang.org/protobuf v1.27.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
+	github.com/huandu/go-clone v1.3.2
 )
