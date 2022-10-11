@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+
 	fmt.Println("test")
 	user := User{Name: "彭哲", Age: 10}
 	fmt.Printf("--------函数调用前¬------,%v", user)
