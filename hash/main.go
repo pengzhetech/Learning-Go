@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	hash := CRC32("BR11151666175932P1")
+	hash := CRC32("35634654654654")
 	fmt.Println(hash & (128 - 1))
 }
 func CRC32(str string) uint32 {
