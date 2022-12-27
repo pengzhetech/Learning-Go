@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+	//
 	all := make([]string, 0, 10)
 	a := "BR221736106023MU"
 	all = append(all, a)
